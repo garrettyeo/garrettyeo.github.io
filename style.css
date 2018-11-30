@@ -175,17 +175,12 @@ img {
   margin-top: 100px;
 }
 
-div .feedburnerFeedBlock {
-   border: 1px solid #ccc;
-    background-color: #E7E7EF;
-    padding: 5px;
-    color: #000000;
-    font-size: 11px;
-}
-
 #secondary-content {
-    float: right;
-    padding-left: 20px;
-    border-left: 1px solid;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #ddd;
+  padding: 5px;
+  max-width: 390px;
 }
 
+div #GarrettYeosBlog52cdh4opde96vkf3au8n0mi3v8 {}
