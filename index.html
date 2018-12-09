@@ -1,85 +1,93 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  
+<html lang="en">
+
 <head>
   <title>garrettyeo.com :: Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="Garrett, Yeo">
+  <meta charset="UTF-8">
   <!-- Meta -->
   <a id="icon" href="#"></a>
-  <!-- webdesign theme links -->
   <link href="style.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- webdesign theme link-->
 </head>
 
 <body>
   <nav id="navbar">
     <div id="nav-wrapper" class="topnav">
       <div id="logo">
-        <!-- TODO: add site logo -->
+        <a href="index.html" class="tophead">
+          <h3>Garrett Yeo</h3>
+        </a>
       </div>
       <ul>
         <li><a class="nav active" href="index.html">Home</a></li>
         <li><a class="nav" href="sideprojects.html">Projects</a></li>
         <li><a class="nav" href="about.html">About</a></li>
-        <li><a class="nav" href="https://onedrive.live.com/embed?cid=4372191430B6DEC4&resid=4372191430B6DEC4%218468&authkey=ANK6pdUpiTRopMY&em=2">CV</a></li>
+        <li><a class="nav" href="https://onedrive.live.com/embed?cid=4372191430B6DEC4&resid=4372191430B6DEC4%218468&authkey=ANK6pdUpiTRopMY&em=2" target="_blank">CV</a></li>
         <!-- TODO: upload pdf -->
-        <li><a class="nav" href="https://yeooman.blogspot.com" target="blank">Blog</a></li>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <li><a class="nav" href="https://yeooman.blogspot.com">Blog</a></li>
+        <a href="javascript:void(0);" class="openbtn" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
       </ul>
     </div>
   </nav>
   <br>
-  <!-- TODO: remove breaks -->
+  <!-- TODO: remove break -->
   <!-- navigation -->
 
-  <div id="title">
-    <h1 align="center">Garrett Yeo's Website</h1>
-    <div align="center">***Website in development***</div>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="active" href="index.html">Home</a>
+    <a href="sideprojects.html">Projects</a>
+    <a href="about.html">About</a>
+    <a href="https://onedrive.live.com/embed?cid=4372191430B6DEC4&resid=4372191430B6DEC4%218468&authkey=ANK6pdUpiTRopMY&em=2" target="_blank">CV</a>
+    <a href="https://yeooman.blogspot.com">Blog</a>
   </div>
-  <!-- title (may not be necessary) -->
+<!-- sidebar -->
 
   <div id="content" class="content">
-    <img src="https://www.futurescienceleaders.com/wp-content/uploads/2015/08/Garrett.jpg" width: "75px" height="175px" alt="Profile picture" />
+    <img src="https://www.futurescienceleaders.com/wp-content/uploads/2015/08/Garrett.jpg" width: "75px" height="175px"
+      alt="Profile picture" />
     <h2>Hi there!</h2>
-    <p>My name is Garrett Yeo. I am a first-year engineering student at the University of British Columbia with interests in the fields of computer graphics, software development, and finance. Here you will find information about myself, my ambitions, my
-      current work, and even a link to my blog. Enjoy!</p>
+    <p>My name is Garrett Yeo. I am a first-year engineering student at the University of British Columbia with
+      interests in the fields of computer graphics, software development, and finance. Here you will find information
+      about myself, my ambitions, my current work, and even a link to my blog. Enjoy!</p>
   </div>
   <!-- content -->
-
-  <div id="secondary-content">
-    <h2>Latest Blog Posts</h2>
-    <script src="http://feeds.feedburner.com/GarrettYeosBlog?format=sigpro" type="text/javascript"></script>
-    <!-- to be continued -->
-  </div>
-  <!-- feedburner sidebar content-->
 
   <div id="footer">
     <div class="social">
       <h4>Connect with me via Social Networks</h4>
-      <a class="media" href="https://ca.linkedin.com/in/garrett-yeo-5a57a514a">LinkedIn</a>
-      <!-- TODO: Fix link -->
-      &nbsp;&nbsp;
+      <a class="social-media" target="_blank" href="https://ca.linkedin.com/in/garrett-yeo-5a57a514a">LinkedIn</a>
     </div>
-    <div class="bottom">
-      <a class="footer" href="index.html">Home</a> &raquo;
+    <div class="bottom-nav">
+      <a class="nav-foot" href="index.html">Home</a> &raquo;
       <br> &copy; 2018 Garrett Yeo
     </div>
   </div>
   <!-- footer -->
-
   <script>
-    function myFunction() {
-      var x = document.getElementById("nav-wrapper");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.body.style.backgroundColor = "#efefef";
     }
   </script>
 
 </body>
+
+<div id="secondary-content">
+  <h2>Latest Blog Posts</h2>
+  <script src="https://feeds.feedburner.com/GarrettYeosBlog?format=sigpro" type="text/javascript"></script>
+  <!-- to be continued -->
+</div>
+<!-- feedburner sidebar content-->
 
 </html>
