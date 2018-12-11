@@ -12,16 +12,21 @@ body {
   min-height: 100%;
 }
 
-img {
-  border-radius: 100%;
+.image-left {
   float: left;
-  margin: 25px;
-  width: 11em;
+  margin: 10px;
+  margin-bottom: 60px;
+  position: relative;
+  top: 40px;
+}
+
+.profile-pic {
+  border-radius: 100%;
 }
 
 #logo {
   float: left;
-  margin-left: -10px;
+  margin-left: -100px;
   font-size: 1.5em;
   margin-top: -7px;
   letter-spacing: 1px;
@@ -46,6 +51,7 @@ img {
 #navbar ul {
   display: inline-block;
   float: right;
+  margin-right: -80px;
   list-style: none;
   /* margin-right: 14px; */
   text-align: right;
@@ -76,7 +82,7 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 1020px){
     #navbar li a {display: none;}
     #nav-wrapper .openbtn{
       color: #a2a8b2;
@@ -123,15 +129,39 @@ img {
 }
 
 #content {
+  margin: 100px 125px 100px;
+}
+#primary-content {
   display: block;
+  float:left;
   position: relative;
-  width: 70vw;
-  margin: 0 auto;
-  margin-top: 100px;
+  width: 700px;
+  margin: 0 20px;
   font-size: 1.2em;
   line-height: 1.5em;
-  min-height: 100px;
-  padding-bottom: 10px;
+  min-height: 125px;
+  text-align: left;
+}
+
+#secondary-content {
+  float: right;
+  border-left: 1px solid #ddd;
+  padding-left: 15px;
+  margin: 0 20px;
+  width: 260px;
+}
+
+div .feedburnerFeedBlock ul {
+  padding-top: 8px; /* Space under the horizontal rule */
+  border: 1px solid #ccc;
+  background-color: #E7E7EF;
+  padding: 5px;
+  font-size: 14px;
+  list-style-type: none;
+}
+
+#creditfooter {
+  display: none;
 }
 
 .content {
@@ -177,12 +207,16 @@ img {
 .nav:visited,
 .nav-foot:link,
 .nav-foot:visited,
-.social-media:link,
-.social-media:visited ,
 .tophead:link,
 .tophead:visited {
   color: black;
   text-decoration: none;
+}
+
+.social-media:link,
+.social-media:visited {
+  color: black;
+  text-decoration: underline;
 }
 
 .nav:hover,
@@ -190,19 +224,8 @@ img {
   color: #a0a7b2;
 }
 
-#secondary-content {
-  margin-bottom: 20px;
-  margin-right: auto;
-  margin-left: auto;
-  border: 1px solid #ddd;
-  padding: 5px;
-  max-width: 390px;
-}
-
-div.feedburnerFeedBlock ul {
-
-  border-top: 3px solid black; /* Style of the horizontal rule */
-
-  padding-top: 8px; /* Space under the horizontal rule */
-
+.feedTitle a, 
+.headline a,
+.readMore {
+  color: #266fb4;
 }
