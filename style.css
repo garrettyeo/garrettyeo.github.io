@@ -166,6 +166,10 @@ div .feedburnerFeedBlock ul {
   display: none;
 }
 
+#aboutme {
+  margin-bottom: 25vh;
+}
+
 /* iPhone X and general phone portrait */
 @media screen and (max-width: 575.98px) { 
   body {
@@ -226,6 +230,7 @@ div .feedburnerFeedBlock ul {
   text-align: left;
   clear: both;
   width: 100vw;
+  bottom: 0;
 }
 
 #sticky {
