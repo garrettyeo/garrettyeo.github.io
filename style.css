@@ -1,4 +1,4 @@
-/* make units relative */
+/* horizontal scolling error */
 html {
   height: 100%;
   box-sizing: border-box;
@@ -120,6 +120,11 @@ body {
   justify-content: space-evenly;
 }
 
+.content {
+  margin: 12vh 4vw;
+  font-size: 1em;
+}
+
 #primary-content {
   display: block;
   width: 700px;
@@ -161,76 +166,21 @@ div .feedburnerFeedBlock ul {
   display: none;
 }
 
-.content {
-  margin-top: 80px;
-  margin-left: 20px;
-  font-size: 1em;
-}
-
-#footer {
-  /* minor scrolling error */
-  box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 8px 8px;
-  margin-bottom: 1vw;
-  text-align: left;
-  clear: both;
-  width: 100vw;
-}
-
-#sticky {
-  position: absolute;
-  bottom: 0;
-  box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 8px 8px;
-  margin-bottom: 1vw;
-  text-align: left;
-  width: 100vw;
-}
-
-#footer .bottom-nav, 
-#sticky .bottom-nav {
-  padding: 14px;
-}
-
-.nav:link,
-.nav:visited,
-.nav-foot:link,
-.nav-foot:visited,
-.tophead:link,
-.tophead:visited {
-  color: black;
-  text-decoration: none;
-}
-
-.social-media:link,
-.social-media:visited {
-  color: black;
-  text-decoration: underline;
-}
-
-.nav:hover,
-.nav-foot:hover {
-  color: #a0a7b2;
-}
-
-.feedTitle a, 
-.headline a,
-.readMore {
-  color: #266fb4;
-}
-
 /* iPhone X and general phone portrait */
 @media screen and (max-width: 575.98px) { 
   body {
     max-width: 375px;
   }
+  
+  /* not centering content */
   #content {
     flex-direction: column;
-    top: 20vw;
+    align-items: center;
+    justify-content: center;
  }
 
  #primary-content {
-  width: 90%;
+    width: 90%;
  }
 
  #secondary-content {
@@ -238,7 +188,6 @@ div .feedburnerFeedBlock ul {
  }
 
  .image-left {
-    float: center;
     white-space: nowrap;
  }
 }
@@ -246,11 +195,10 @@ div .feedburnerFeedBlock ul {
 /* iPad and tablets */
 @media screen and (min-width:575px) and (max-width: 769px) {
   body {
-    max-width: 768px;
+    max-width: 575px;
   }
   #content {
     flex-direction: column;
-    top: 20vw;
     justify-content: space-between;
  }
 
@@ -271,6 +219,52 @@ div .feedburnerFeedBlock ul {
  }
 }
 
-@media (max-width: 991.98px) { ... }
+#footer {
+  box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 8px 8px;
+  margin-bottom: 2vh;
+  text-align: left;
+  clear: both;
+  width: 100vw;
+}
 
-@media (max-width: 1199.98px) { ... }
+#sticky {
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 8px 8px;
+  margin-bottom: 2vh;
+  text-align: left;
+  width: 100vw;
+}
+
+#footer .bottom-nav, 
+#sticky .bottom-nav {
+  padding: 14px;
+  font-size: 1em;
+}
+
+.nav:link,
+.nav:visited,
+.nav-foot:link,
+.nav-foot:visited,
+.tophead:link,
+.tophead:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.nav:hover,
+.nav-foot:hover {
+  color: #a0a7b2;
+}
+
+.feedTitle a, 
+.headline a,
+.readMore,
+.social-media:link,
+.social-media:hover,
+.mail:link,
+.mail:hover {
+  color: #266fb4;
+}
