@@ -196,9 +196,8 @@ div .feedburnerFeedBlock ul {
     white-space: nowrap;
  }
 
- /* margin is 14px because of added curvature of iPhone X */
- body #footer, body #sticky {
-  box-shadow: none;
+ /* margin is 18px because of added curvature of iPhone X */
+ body #footer, body #stickyfooter {
   margin-bottom: 18px;
  }
 }
@@ -229,8 +228,7 @@ div .feedburnerFeedBlock ul {
     margin-bottom: 100px;
  }
 
- body #footer, body #sticky {
-  box-shadow: none;
+ body #footer, body #stickyfooter {
   margin-bottom: 14px;
  }
 }
@@ -238,23 +236,25 @@ div .feedburnerFeedBlock ul {
 #footer {
   background-color: #e8e8e8;
   bottom: 0;
-  padding-top: 3.5vh;
+  padding-top: 1vh;
   padding-bottom: 5vh;
   text-align: center;
   font-size: 1em;
   width: 100vw;
+  clear: both;
 }
 
 /* for about.html and sideprojects.html*/
 #stickyfooter {
   background-color: #e8e8e8;
   bottom: 0;
-  padding-top: 3.5vh;
+  padding-top: 1vh;
   padding-bottom: 5vh;
   position: absolute;
   text-align: center;
   font-size: 1em;
   width: 100vw;
+  clear: both;
 }
 
 .nav:link,
