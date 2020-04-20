@@ -1,0 +1,2 @@
+-Add tophead/site logo (signature or brand)
+-Revamp footer and make responsive
