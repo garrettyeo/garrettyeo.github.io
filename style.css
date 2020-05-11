@@ -227,12 +227,9 @@ div .feedburnerFeedBlock ul {
     white-space: nowrap;
     margin-bottom: 100px;
  }
-
- body #footer, body #stickyfooter {
-  margin-bottom: 14px;
- }
 }
 
+/* for index.html */
 #footer {
   background-color: #e8e8e8;
   bottom: 0;
@@ -244,13 +241,25 @@ div .feedburnerFeedBlock ul {
   clear: both;
 }
 
-/* for about.html and sideprojects.html*/
+/* for sideprojects.html*/
 #stickyfooter {
   background-color: #e8e8e8;
-  bottom: 0;
   padding-top: 1vh;
   padding-bottom: 5vh;
   position: absolute;
+  text-align: center;
+  font-size: 1em;
+  width: 100vw;
+  clear: both;
+}
+
+/* for about.html*/
+#stuckfooter {
+  background-color: #e8e8e8;
+  padding-top: 1vh;
+  padding-bottom: 5vh;
+  bottom: 0;
+  position: fixed;
   text-align: center;
   font-size: 1em;
   width: 100vw;
