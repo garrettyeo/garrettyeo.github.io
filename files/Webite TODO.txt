@@ -1,2 +1,6 @@
--Add tophead/site logo (signature or brand)
--Revamp footer and make responsive
+-Add tophead/logo ->NOT NEEDED
+-Revamp footer and make responsive -> DONE
+
+MAY 2020
+-Re-upload resume
+-Fix Bio
