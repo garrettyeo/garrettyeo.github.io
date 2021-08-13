@@ -114,7 +114,7 @@ body {
 }
 
 #content {
-  margin: 15vh 7vw;
+  margin: 15vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -132,7 +132,11 @@ body {
   font-size: 1.2em;
   line-height: 1.5em;
   text-align: left;
-  margin-left:5vw;
+  margin-top: 40px;
+}
+
+#primary-content .intro {
+  margin-top: 50px;
 }
 
 .image-left {
@@ -140,11 +144,10 @@ body {
   margin: 20px;
   margin-bottom: 60px;
   position: relative;
-  top: 40px;
 }
 
 .profile-pic {
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 #secondary-content {
