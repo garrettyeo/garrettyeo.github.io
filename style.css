@@ -126,28 +126,12 @@ body {
   margin-left: 12vw;
 }
 
-#primary-content {
-  display: block;
-  width: 700px;
-  font-size: 1.2em;
-  line-height: 1.5em;
-  text-align: left;
-  margin-top: 40px;
-}
-
 #primary-content .intro {
   margin-top: 50px;
 }
 
-.image-left {
-  float: left;
-  margin: 20px;
-  margin-bottom: 60px;
-  position: relative;
-}
-
 .profile-pic {
-  border-radius: 50%;
+  border-radius: 70%;
 }
 
 #secondary-content {
